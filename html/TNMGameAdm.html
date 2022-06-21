@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>TNM注册</title>
+	<link rel="stylesheet" href="..\css\TNMGameAdm.css" type="text/css">
+    <script src="../jquery/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="../js/TNMGameAdm.js"></script>
+</head>
+<body>
+	<div id="header">
+       <a href="#"><img src="../images/adm2.png" height="60px" class="left" style="margin-left: 200PX; z-index: -1;"></a>
+       <a href="TNM GameLog.html" class="right" style="margin-right: 200px;">返回登陆</a><a href="TNMGameIndex.html" class="right" >返回首页</a>
+	</div>
+	<div id="main">
+	<!-- <img src="../images/01.jpg" alt=""> -->
+	<ul class="step">
+		<li class="left1">填写信息</li>
+		<li class="left2">邮箱验证</li>
+		<li class="left3">注册成功</li>
+	</ul>
+	<div class="clear"></div>
+	<ul class="c">
+	<li class="step1">
+	<form action="#" method="post" class="one">
+        <h2 class="columnTitle t t3"><a href="#" class="more">PRIVATE</a><strong>注册信息</strong><span>INFORMATION</span></h2>
+        <table class="content">
+            <tr>
+                <td >注册方式：</td>
+                <td>
+                <label for="one"><input type="radio" name="sex" id="one" />E-mail注册</label>&nbsp;&nbsp;&nbsp;&nbsp;
+                <label for="two"><input type="radio" name="sex" id="two" />手机号码注册</label>
+                </td>
+            </tr>
+            <tr>
+                <td>注册邮箱：</td>
+                <td><input type="text" class="right" id="text1" oninput="checkEmail()" onblur="checkEmail()" onfocus="checkEmail()" /></td>
+                <td><i></i><p class="1">请输入邮箱</p></td>
+            </tr>
+            <tr>
+                <td>注册手机：</td>
+                <td><input type="text" class="right" id="text2" oninput="checkPhone()" onblur="checkPhone()" onfocus="checkPhone()" /></td>
+                <td style="width: 200px;"><i></i><p  class="2">请输入手机号</p></td>
+            </tr>
+            <tr>
+                <td>登陆密码：</td>
+                <td><input type="password" maxlength="8" class="right" id="password1" /></td>
+            </tr>
+            <tr>
+                <td>确认密码：</td>
+                <td><input type="password" maxlength="8" class="right" id="password2" oninput="checkPw()" onblur="checkPw()" onfocus="checkPw()" /></td>
+                <td><i></i><p class="3">密码必须以字母或者数字组成</p></td>
+            </tr>
+            <tr>
+                <td>昵称：</td>
+                <td><input type="text"  class="right" id="text3"/></td>
+                <td><i></i><p class="4">填写你爱的</p></td>
+            </tr>  
+        </table>
+        <h2 class="columnTitle t t3"><a href="#" class="more">PRIVATE</a><strong>个人信息</strong><span>INFORMATION</span></h2>
+        <table class="content">
+            <tr>
+                <td class="left">性别：</td>
+                <td>
+                <label for="boy"><input type="radio" name="sex" id="boy" />男
+</label>&nbsp;&nbsp;&nbsp;&nbsp;
+                <label for="girl"><input type="radio" name="sex" id="girl" />女</label>
+                </td>
+            </tr>
+            <tr>
+                <td class="left">游戏类型：</td>
+                <td>
+                    <select>
+                        <option>-请选择-</option>
+                        <option>飞行射击</option>
+                        <option>策略冒险</option>
+                        <option>竞速赛车</option>
+                        <option>单机</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="left">自我评价：</td>
+                <td>
+                    <select>
+                        <option>-请选择-</option>
+                        <option selected="selected">熟练度一般</option>
+                        <option>熟练度菜鸟</option>
+                        <option>熟练度大师</option>
+                        <option>无敌</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="left">游戏目的：</td>
+                <td>
+                    <input type="checkbox" />&nbsp;直播&nbsp;&nbsp;&nbsp;
+                    <input type="checkbox" />&nbsp;娱乐&nbsp;&nbsp;&nbsp;
+                    <input type="checkbox" />&nbsp;爱好&nbsp;&nbsp;&nbsp;
+                </td>
+            </tr>
+            <tr>
+                <td class="left">自我介绍：</td>
+                <td>
+                    <textarea cols="60" rows="8" id="textarea">评论的时候，请遵纪守法并注意语言文明，多给文档分享人一些支持。</textarea>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="submit" class="btn" value="提交" onclick="search()" /></td>
+            </tr>
+        </table>
+        </form>
+        </li>
+        <li class="step2">
+            <p class="shang"><---上一步</p>
+            <div id="step2"><div class="text4"><input type="text" name="text" id="text4" value="六位验证码" /></div><button onclick="next2()">提交</button></div>  
+        </li>
+        <li class="step3">
+            <h4><a href="tnm GameLog.html">返回登陆>></a></h4>
+        </li>
+        </ul> 
+	</div>
+<div id="footer">
+     Copyright   2015-2020  TNM Game 游戏公司 版权所有
+     <br/>中国青岛 高新区广博路325号 青软教育集团 咨询热线：400-658-0166  400-658-1022<br/>
+</div>
+</body>
+</html>

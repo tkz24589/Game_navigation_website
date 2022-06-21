@@ -1,0 +1,125 @@
+body{
+	background: #dfdfe1;
+}
+.body{
+	width: 1200px;
+	margin: 0 auto;
+	margin-top: 10px;
+}
+.listHead {
+	width: 750px;
+	height: 38px;
+	background: url(../images/listHead.png) no-repeat;
+	margin: 40px auto 40px;
+}
+#article{
+	float: left;
+	width: 800px;
+	padding: 10px;
+	border-radius: 5px;
+	border-right:1px solid #bfc0c6;
+	background: #fff;
+}
+#article p {
+	font-size: 16px;
+	height: 30px;
+	line-height: 30px;
+	color: #333;
+	padding: 10px 0;
+}
+.columnTitle2 {
+	width: 330px;
+	float: left;
+	font-size: 18px;
+	color: #000;
+	border-bottom: #ddd 1px solid;
+	line-height: 46px;
+	font-weight: normal;
+	height: 46px;
+	background: #fff;
+}
+.columnTitle2 .more2:link, .columnTitle2 .more2:visited {
+	color: #5272d9;
+}
+.columnTitle2 .more2 {
+	float: right;
+	font-size: 14px;
+	color: #5272d9;
+	line-height: 54px;
+}
+.columnTitle2 span {
+	display: inline-block;
+	border-bottom: 4px solid #5272d9;
+	padding: 0 3px 0 30px;
+	height: 44px;
+	position: relative;
+	z-index: 999;
+}
+.columnTitle2 span::after {
+	width: 18px;
+	height: 18px;
+	background: url(../images/contico.png) 0 -447px no-repeat;
+	position: absolute;
+	left: 0;
+	top: 15px;
+	content: "";
+}
+.r{
+	width: 330px;
+	height: 1050px;
+	float: right;
+	background: #fff;
+	border-radius: 5px;
+	border-left:1px solid #bfc0c6;
+}
+.xc{
+	background: #fff;
+	width: 310px;
+	float: right;
+	background: #fff;
+	padding: 10px;
+}
+.xc a,.xc img{
+	margin-top: 20px;
+	-webkit-transition: all .6s ease;
+	-moz-transition: all .6s ease;
+	-ms-transition: all .6s ease;
+	transition: all .6s ease;
+}
+.xc a:hover img{
+	transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	-o-transform: scale(1.1);
+}
+.xcc p{
+	font-size: 16px;
+	width: 300px;
+	text-indent: 28px;
+	margin-top: 20px;
+}
+.columnTitle strong,.tjnewsbtn,.columnTitle span {
+	background: #dfdfe1;
+}
+.t::after {
+	background: #040518;
+}
+button{
+	display: block;
+	cursor: pointer;
+	width: 80px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	border-radius: 5px;
+	background: #51b5a6;
+    border: none;
+    margin: 0 auto;
+}
+button:hover{
+	color: red;
+}
+.tree{
+	left: 50px;
+	width: 100px;
+}

@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TNM Game首页</title>
+  <link rel="stylesheet" href="..\css\TNM gamer.css" type="text/css">
+  <script src="../jquery/jquery-1.11.1.min.js"></script>
+  <script type="text/javascript" src="../jquery/jQuery.js"></script>  <!-- 必须将jquery.js文件放在使用它的JS前面 -->
+  <script type="text/javascript" src="../js/TNM game.js"></script>
+</head>
+<body>
+<div id="header">
+  <a href=""><img src="../images/tnm.jpg" height="60px" class="left" style="margin-left: 200PX; z-index: -1;"></a>
+  <div class="TopSearchBox left">
+            <form name="tnm_search" id="tnm_search" action="" method="get" target="_blank">
+                <div class="tab left" onmouseover="change('list_cur','block','searchType')" onmouseout="change('list_cur','none','searchType')">
+                </div>
+                <input class="keyword left" id="keyword" type="text" value="">
+                <input class="keySubmit right" type="submit" value="">
+            </form>
+</div>
+  <div class="ShareBox right">
+            <a href="" rel="nofollow" target="_blank" title="新浪微博" class="sina"></a>
+            <a href="javascript:;" title="微信" class="weixin">
+                <div class="ewm52pk">
+                    <i></i>
+                    <img src="../images/tnm.png" style="display: none;">
+                </div>
+            </a>
+            <a href="" target="_blank" title="52PK手机站" class="wap52PK"></a>
+            <a href="" target="_blank" title="52PK客户端" class="kehd52PK"></a>
+            <a href="javascript:;" onclick="addFavorite()" title="收藏" class="collect"></a>
+            <a id="api_login_box" class="dlbefore api_login_box" href="TNM GameLog.html" title="登录" style="margin-right: 150px;"></a>
+        </div>
+</div>
+<div class="banner">
+<div class="tab left" onmouseover="change('list_cur','block','searchType')" onmouseout="change('list_cur','none','searchType')">
+     <ul class="right">
+         <li class="list">
+            <span>资讯</span>
+            <span id="searchType"><i style="top: 11px;
+    transform: rotate(0deg);"></i></span>
+        </li>
+     </ul>
+     <div id="list_cur">
+      <a href="#"><b></b>资讯</a>
+      <a href="#"><b></b>手游</a>
+      <a href="#"><b></b>端游</a>
+</div> 
+</div>
+     <ul class="banner_pic" id="banner_pic">
+        <li class="current"><img class="one" src="../images/pic1.jpg"/ width="1000px"></li>
+        <li class="pic"><img class="one" src="../images/pic2.jpg"/ width="1000px"></li>
+        <li class="pic"><img class="one" src="../images/pic3.jpg"/ width="1000px"></li>
+        <li class="pic"><img class="one" src="../images/pic4.jpg"/ width="1000px"></li>
+        <li class="pic"><img class="one" src="../images/pic5.jpg"/ width="1000px"></li>
+    </ul>
+    <ol id="button">
+        <li class="current"></li>
+        <li class="but"></li>
+        <li class="but"></li>
+        <li class="but"></li>
+        <li class="but"></li>
+    </ol>
+</div>
+</div> 
+<div id="down"></div>
+<div id="down_1"><p>点此处隐藏</p></div>
+<div id="game_manu">
+        <a href="http://news.52pk.com/zt/2017pd/" target="_blank" style="display:none;width:380px;height:57px;position:absolute; right:0; top:-11px;"><img src="http://www.52pk.com/style/1512files/images/pd2017-2.png"></a>
+        <div class="searchMorePlay" style="display:block;">
+          <a href="http://games.52pk.com/" target="_blank">更多游戏查询</a>
+        </div>
+        <dl>
+            <dd class="nowshow" onclick="exchange(0);">热门推荐</dd>
+            <dd class="" onclick="exchange(1)">手机游戏</dd>
+            <dd class="" onclick="exchange(2)">网络游戏</dd>
+            <dd class="" onclick="exchange(3)">网页游戏</dd>
+            <dd style="color:#ff9600; font-weight:bold;" class="" onclick="exchange(4)">软件下载</dd>
+        </dl>
+        <ul class="cc" style="display: block;">
+            <li>
+                <cite>网游</cite>
+                <p>
+                    <a href="http://cf.52pk.com/" target="_blank" style=" color:#f8656c;" class="hong">穿越火线</a><a href="" target="_blank">英雄联盟</a><a href="" target="_blank">DNF</a><a href="" target="_blank" class="huang">绝地求生</a><a href="" target="_blank">堡垒之夜</a><a href="" target="_blank">剑网3</a><a href="" target="_blank">剑灵</a><a href="" target="_blank">魔兽世界</a><a href="" target="_blank">灵山奇缘</a><a href="" target="_blank">逆水寒</a><a href="" target="_blank">怪物猎人:世界</a><a href="" target="_blank">我的世界中国版</a><a href="" target="_blank" style=" color:#f8656c;" class="hong">逍遥情缘</a><a href="" target="_blank">炉石传说</a>
+
+                </p>
+            </li>
+            <li>
+                <cite class="shouyou">手游</cite>
+                <p>
+                    <a href="http://cf.52pk.com/cfm/" target="_blank">穿越火线：荒岛特训</a><a href="http://wzry.52pk.com/" target="_blank" style=" color:#f8656c;" class="hong">王者荣耀</a><a href="http://xin.52pk.com/sy_ku/jdqscjzc/" target="_blank">绝地求生：刺激战场</a><a href="http://xin.52pk.com/sy_ku/dwrg/index.shtml" target="_blank">第五人格</a><a href="http://xin.52pk.com/sy_ku/jxsj2sy/" target="_blank">剑侠世界2</a><a href="http://xin.52pk.com/sy_ku/zyhx/" target="_blank">自由幻想</a><a href="http://jx3m.52pk.com/" target="_blank">剑网3指尖江湖</a><a href="http://www.youxibao.com/ku/fgo/" target="_blank">FateGo</a><a href="http://xin.52pk.com/sy_ku/frxy/" target="_blank">非人学院</a><a href="http://xin.52pk.com/sy_ku/dpcqddzl/" target="_blank">斗破苍穹</a><a href="http://xin.52pk.com/sy_ku/skzqsy/" target="_blank">实况足球</a> 
+                </p>
+            </li>
+            <li>
+                <cite class="webyou">页游</cite>
+                <p>
+                    <a href="http://web.52pk.com/yhmy/" target="_blank">魔域永恒</a><a href="http://web.52pk.com/jsxw/" target="_blank">绝世仙王</a><a href="http://web.52pk.com/lsqy/" target="_blank" class="huang">龙神契约</a><a href="http://web.52pk.com/hyrz/" target="_blank">火影忍者ol</a><a href="http://web.52pk.com/cqby/" target="_blank">传奇霸业</a><a href="http://web.52pk.com/taiji2/" target="_blank">太极崛起</a><a href="http://web.52pk.com/bsw/" target="_blank">剑灵洪门崛起</a><a href="http://web.52pk.com/dtszj/" target="_blank" style=" color:#f8656c;" class="hong">大天使之剑</a><a href="http://web.52pk.com/xzcq/" target="_blank">小志传奇</a><a href="http://web.52pk.com/hlw/" target="_blank">葫芦娃</a><a href="http://web.52pk.com/lycq/" target="_blank">蓝月传奇</a><a href="http://web.52pk.com/sdyxz/" target="_blank">新射雕英雄传</a>
+                </p>
+            </li>
+        </ul>
+        <ul class="column-sort cc" style="display: none;">
+            <li>
+                <a href="http://wzry.52pk.com/" target="_blank">王者荣耀</a><a href="http://www.youxibao.com/cfm/" target="_blank">穿越火线：荒岛特训</a><a href="http://xin.52pk.com/sy_ku/zmq/" target="_blank">镇魔曲手游</a><a href="http://www.youxibao.com/ku/jl/" target="_blank">街篮</a><a href="http://www.52pk.com/games/mhhy/" target="_blank">梦幻花园</a><a href="http://xin.52pk.com/sy_ku/jzhsmyjsy/" target="x_blank">九州海上牧云记</a><a href="http://www.youxibao.com/ku/fgo/" target="_blank">FateGo</a><a href="http://xin.52pk.com/sy_ku/ws3sy/" target="_blank">神武3手游</a><a href="http://xin.52pk.com/sy_ku/wjsy/" target="_blank">无尽神域</a><a href="http://www.youxibao.com/ku/lzgsy/" target="_blank">龙之谷手游</a><a href="http://www.52pk.com/games/yys/" target="_blank">阴阳师手游</a><a href="http://xin.52pk.com/sy_ku/hyrz/" target="_blank">火影忍者</a><a href="http://xin.52pk.com/sy_ku/dhxy/" target="_blank">大话西游手游</a><a href="http://xin.52pk.com/sy_ku/wdsjsjb/" target="_blank">我的世界手机版</a><a href="http://xin.52pk.com/sy_ku/lscs/" target="_blank">炉石传说</a><a href="http://xin.52pk.com/sy_ku/qqdzz/" target="_blank">球球大作战</a><a href="http://xin.52pk.com/sy_ku/jx3/" target="_blank">剑网3：指尖江湖</a><a href="http://xin.52pk.com/sy_ku/mxsy/" target="_blank">梦想世界手游</a><a href="http://xin.52pk.com/sy_ku/kxxxl/" target="_blank">开心消消乐</a><a href="http://xin.52pk.com/sy_ku/cytus2/" target="_blank">音乐世界Cytus II</a><a href="http://xin.52pk.com/sy_ku/zjz2spr/" target="_blank">终结者2：审判日</a><a href="http://xin.52pk.com/sy_ku/zt2/" target="_blank">征途2手游</a><a href="http://xin.52pk.com/sy_ku/xyjlwys/" target="_blank">轩辕剑龙舞云山</a><a href="http://xin.52pk.com/sy_ku/ysyy/" target="_blank">云裳羽衣</a><a href="http://xin.52pk.com/sy_ku/zxsy/" target="_blank">诛仙手游</a><a href="http://xin.52pk.com/sy_ku/gydj/" target="_blank">光影对决</a><a href="http://xin.52pk.com/sy_ku/cjmlakp/" target="_blank">超级马里奥酷跑</a><a href="http://xin.52pk.com/sy_ku/zgjqxs/" target="_blank">中国惊奇先生</a><a href="http://xin.52pk.com/sy_ku/jdqscjzc/" target="_blank">绝地求生：刺激战场</a><a href="http://xin.52pk.com/sy_ku/qjmujx/" target="_blank">奇迹MU：觉醒</a><a href="http://xin.52pk.com/sy_ku/jdqsqjcj/" target="_blank">绝地求生：全军出击</a><a href="http://xin.52pk.com/sy_ku/skygy/" target="_blank">Sky光遇</a><a href="http://xin.52pk.com/sy_ku/fknsg2/" target="_blank">放开那三国2</a><a href="http://xin.52pk.com/sy_ku/cqbysy/" target="_blank">传奇霸业手游</a><a href="http://xin.52pk.com/sy_ku/shumen/" target="_blank">蜀门手游</a><a href="http://xin.52pk.com/sy_ku/tksjsjz/" target="_blank">坦克世界闪击战</a><a href="http://xin.52pk.com/sy_ku/xyzhxz/" target="_blank">圣斗士星矢-小宇宙幻想传</a><a href="http://xin.52pk.com/sy_ku/jnbg2/" target="_blank">纪念碑谷2</a><a href="http://xin.52pk.com/sy_ku/frxy/" target="_blank">非人学园</a><a href="http://xin.52pk.com/sy_ku/blhx/" target="_blank">碧蓝航线</a><a href="http://xin.52pk.com/sy_ku/wd/" target="_blank">问道手游</a><a href="http://xin.52pk.com/sy_ku/mfjsml/" target="_blank">魔法禁书目录</a><a href="http://xin.52pk.com/sy_ku/xmct/" target="_blank">星盟冲突</a><a href="http://xin.52pk.com/sy_ku/bsymg/" target="_blank">不思议迷宫</a><a href="http://xin.52pk.com/sy_ku/qqfc/" target="_blank">QQ飞车手游</a><a href="http://xin.52pk.com/sy_ku/fjlrs/" target="_blank">饭局狼人杀</a><a href="http://xin.52pk.com/sy_ku/hhwjz/" target="_blank">航海王激战</a><a href="http://xin.52pk.com/sy_ku/xmxy/" target="_blank">星梦学院</a><a href="http://xin.52pk.com/sy_ku/snkfq/" target="_blank">少女咖啡枪</a><a href="http://xin.52pk.com/sy_ku/fknsg/" target="_blank">放开那三国</a><a href="http://xin.52pk.com/sy_ku/cqsjsy/" target="_blank">传奇世界手游</a><a href="http://xin.52pk.com/sy_ku/xjcsshyhda/" target="_blank">仙境传说RO：守护永恒的爱</a><a href="http://xin.52pk.com/sy_ku/mfsnxy/" target="_blank">魔法少女小圆</a><a href="http://xin.52pk.com/sy_ku/jyzj/" target="_blank">九阴</a>
+            </li>
+        </ul>
+        <ul class="column-sort cc" style="display: none;">
+            <li>
+                <a href="http://ow.52pk.com/" target="_blank">守望先锋</a><a href="http://lscs.52pk.com/" target="_blank">炉石传说</a><a href="http://wow.52pk.com/" target="_blank">魔兽世界</a><a href="http://hots.52pk.com/" target="_blank">风暴英雄</a><a href="http://jx3.52pk.com/" target="_blank">剑网3</a><a href="http://bns.52pk.com/" target="_blank">剑灵</a><a href="http://dnf.52pk.com/" target="_blank">DNF</a><a href="http://wuxia.52pk.com/" target="_blank">天涯明月刀</a><a href="http://cf.52pk.com/" target="_blank" style="color:#f8656c;" class="hong">穿越火线</a><a href="http://mxd2.52pk.com/" target="_blank">冒险岛2</a><a href="http://gw2.52pk.com/" target="_blank">激战2</a><a href="http://nz.52pk.com/" target="_blank">逆战</a><a href="http://codol.52pk.com/" target="_blank">使命召唤ol</a><a href="http://csgo.52pk.com/" target="_blank">CSGO</a><a href="http://gjol.52pk.com/" target="_blank">古剑奇谭ol</a><a href="http://daihao0.52pk.com/" target="_blank">灵山奇缘</a><a href="http://xin.52pk.com/game/index_11036.shtml" target="_blank">宝藏世界</a><a href="http://xin.52pk.com/game/index_11006.shtml" target="_blank">虚幻争霸</a><a href="http://xin.52pk.com/game/index_11012.shtml" target="_blank" class="huang">逆水寒</a><a href="http://xin.52pk.com/game/index_10944.shtml" target="_blank">我的世界</a><a href="http://xin.52pk.com/game/index_11040.shtml" target="_blank">火箭联盟</a><a href="http://xin.52pk.com/game/index_10924.shtml" target="_blank">龙魂时刻</a><a href="http://tianyu.52pk.com/" target="_blank">天谕</a><a href="http://shenwu.52pk.com/" target="_blank">神武2</a><a href="http://poe.52pk.com/" target="_blank">流放之路</a><a href="http://xin.52pk.com/game/index_10288.shtml" target="_blank">救世之树</a><a href="http://xin.52pk.com/game/index_10956.shtml" target="_blank">枪火游侠</a><a href="http://xin.52pk.com/game/index_10788.shtml" target="_blank">战意</a><a href="http://black.52pk.com/" target="_blank">黑色沙漠</a><a href="http://xin.52pk.com/game/index_10818.shtml" target="_blank">失落的方舟</a><a href="http://xin.52pk.com/game/index_16063.shtml" target="_blank">蛮荒搜神记</a><a href="http://tfol.52pk.com/" target="_blank">变形金刚</a><a href="http://nfsol.52pk.com/" target="_blank">极品飞车ol</a><a href="http://tksj.52pk.com/" target="_blank">坦克世界</a><a href="http://xin.52pk.com/game/index_10890.shtml" target="_blank">勇者斗恶龙X</a><a href="http://zjsj.52pk.com/" target="_blank">战舰世界</a><a href="http://cqyh.52pk.com/" target="_blank">传奇永恒</a><a href="http://xin.52pk.com/game/index_10824.shtml" target="_blank">天衍录</a><a href="http://xin.52pk.com/game/index_10996.shtml" target="_blank">自由禁区</a><a href="http://xin.52pk.com/game/index_3434.shtml" target="_blank">黑暗与光明</a><a href="http://xin.52pk.com/game/index_11042.shtml" target="_blank">百变球球</a><a href="http://xin.52pk.com/game/index_11197.shtml" target="_blank">神武3</a><a href="http://xin.52pk.com/game/index_11207.shtml" target="_blank">传送门骑士</a><a href="http://xin.52pk.com/game/index_2506.shtml" target="_blank">镇魔曲</a><a href="http://xin.52pk.com/game/index_5302.shtml" target="_blank">最终幻想14</a><a href="http://fifaol.52pk.com/" target="_blank">FIFA online3</a><a href="http://xin.52pk.com/game/index_11002.shtml" target="_blank">幻想全明星</a><a href="http://xin.52pk.com/game/index_5176.shtml" target="_blank">新倩女幽魂</a><a href="http://xin.52pk.com/game/index_11010.shtml" target="_blank">方舟生存进化</a><a href="http://dota2.52pk.com/" target="_blank">DOTA2</a><a href="http://xxsj2.52pk.com/" target="_blank">仙侠世界2</a><a href="http://ywz.52pk.com/" target="_blank">影武者</a><a href="http://pubg.52pk.com/" target="_blank" style="color:#f8656c;">绝地求生</a><a href="http://xin.52pk.com/game/index_11083.shtml" target="_blank">九阴真经2</a><a href="http://xin.52pk.com/game/index_11220.shtml" target="_blank">无限法则</a><a href="http://xin.52pk.com/game/index_10918.shtml" target="_blank">永恒都市3</a><a href="http://lol.52pk.com/" target="_blank" style="color:#f8656c;">英雄联盟</a><a href="http://omd.52pk.com/" target="_blank">兽人必须死</a><a href="http://qj.52pk.com/" target="_blank">枪界</a><a href="http://xin.52pk.com/game/index_11138.shtml" target="_blank">阿佩尔物语</a><a href="http://xin.52pk.com/game/index_11108.shtml" target="_blank">巫师之昆特牌</a><a href="http://xin.52pk.com/game/index_11086.shtml" target="_blank">泰亚史诗</a><a href="http://xin.52pk.com/game/index_11085.shtml" target="_blank">天之禁2</a><a href="http://xin.52pk.com/game/index_11014.shtml" target="_blank">秘境对决</a><a href="http://xin.52pk.com/game/index_10966.shtml" target="_blank">装甲战争</a><a href="http://xin.52pk.com/game/index_10838.shtml" target="_blank">封印者</a><a href="http://mh.52pk.com/" target="_blank">洛奇英雄传</a><a href="http://xin.52pk.com/game/index_14471.shtml" target="_blank">天下3</a><a href="http://xin.52pk.com/game/index_10268.shtml" target="_blank">虎豹骑</a><a href="http://xin.52pk.com/game/index_10844.shtml" target="_blank">第十域：英雄起源</a><a href="http://xin.52pk.com/game/index_4212.shtml" target="_blank">反恐精英OL</a><a href="http://xin.52pk.com/game/index_4468.shtml" target="_blank">龙之谷2</a><a href="http://nba2kol.52pk.com/" target="_blank">NBA2K Online</a>
+            </li>
+        </ul>
+        <ul class="column-sort cc" style="display: none;">
+            <li>
+                </li><li><a target="_blank" href="" title="皇图">皇图</a><a target="_blank" href="" title="烈焰">烈焰</a><a target="_blank" href="" title="七杀">七杀</a><a target="_blank" href="" title="思美人">思美人</a><a target="_blank" href="" title="楚乔传">楚乔传</a><a target="_blank" href="" title="九天封神">九天封神</a><a target="_blank" href="" title="秦时明月">秦时明月</a><a target="_blank" href="" title="蓝月传奇">蓝月传奇</a><a target="_blank" href="" title="传奇世界">传奇世界</a><a target="_blank" href="" title="暗黑神话">暗黑神话</a><a target="_blank" href="" title="三国杀OL">三国杀OL</a><a target="_blank" href="" title="第一舰队">第一舰队</a><a target="_blank" href="" title="鬼吹灯之牧野诡事">鬼吹灯之牧野诡事</a><a target="_blank" href="" title="植物大战僵尸ol">植物大战僵尸ol</a> </li>
+<li><a href="" title="怒魂" target="_blank">怒魂</a><a target="_blank" href="" title="求魔">求魔</a><a target="_blank" href="" title="刺沙">刺沙</a><a target="_blank" href="" title="轩辕剑">轩辕剑</a><a target="_blank" href="" title="葫芦娃">葫芦娃</a><a target="_blank" href="" title="九阴绝学">九阴绝学</a><a target="_blank" href="" title="主宰西游">主宰西游</a><a target="_blank" href="" title="霸者之刃">霸者之刃</a><a target="_blank" href="" title="斩龙传奇">斩龙传奇</a><a target="_blank" href="" title="传奇盛世">传奇盛世</a><a href="" title="赤月传说2" target="_blank">赤月传说2</a><a href="" title="火影忍者ol" target="_blank">火影忍者ol</a><a target="_blank" href="" title="特工皇妃楚乔传">特工皇妃楚乔传</a><a target="_blank" href="" title="大航海时代5">大航海时代5</a></li>
+
+<li><a target="_blank" href="" title="天局">天局</a>|<a target="_blank" href="" title="枪魂">枪魂</a>|<a target="_blank" href="" title="将神">将神</a>|<a target="_blank" href="" title="琅琊榜">琅琊榜</a>|<a target="_blank" href="" title="Touch">Touch</a>|<a target="_blank" href="" title="洛克王国">洛克王国</a>|<a target="_blank" href="" title="诸神黄昏">诸神黄昏</a>|<a target="_blank" href="" title="无上神兵">无上神兵</a>|<a target="_blank" href="" title="铁骑三国">铁骑三国</a>|<a target="_blank" href="" title="风暴大陆">风暴大陆</a>|<a target="_blank" href="" title="格斗猎人2">格斗猎人2</a>|<a target="_blank" href="" title="蓝月传奇">蓝月传奇</a>|<a target="_blank" href="" title="武神赵子龙">武神赵子龙</a>|<a target="_blank" href="" title="信喵之野望">信喵之野望</a>|<a target="_blank" href="" title="部落守卫战">部落守卫战</a> |<a target="_blank" href="" title="奥比岛">奥比岛</a></li>
+
+
+            
+        </ul>
+        <ul class="column-sort cc" style="display: none;">
+            <li>
+                <a href="http://www.52pk.com/soft/201803/95185.shtml" target="_blank">有道词典</a><a href="http://www.52pk.com/soft/201803/95720.shtml" target="_blank" class="h_games">WPS2018</a><a href="http://www.52pk.com/soft/201803/95140.shtml" target="_blank" class="h_games">360安全卫士</a><a href="http://www.52pk.com/soft/201803/95230.shtml" target="_blank">腾讯qq2018</a><a href="http://www.52pk.com/soft/201803/95142.shtml" target="_blank">百度网盘</a><a href="http://www.52pk.com/soft/201803/95131.shtml" target="_blank">腾讯企点</a><a href="http://www.52pk.com/soft/201803/95206.shtml" target="_blank">暴风影音</a><a href="http://www.52pk.com/soft/201803/95732.shtml" target="_blank" class="h_games">谷歌浏览器</a><a href="http://www.52pk.com/soft/201803/95190.shtml" target="_blank">wifi共享大师</a><a href="http://www.52pk.com/soft/201803/95200.shtml" target="_blank" class="h_games">winrar免费版</a><a href="http://www.52pk.com/soft/201803/95719.shtml" target="_blank">风行视频</a><a href="http://www.52pk.com/soft/201803/95174.shtml" target="_blank">苹果恢复大师</a><a href="http://www.52pk.com/soft/201803/95462.shtml" target="_blank">火绒安全</a><a href="http://www.52pk.com/soft/201803/95233.shtml" target="_blank">酷狗音乐</a><a href="http://down.52pk.com/xiazai/131.shtml" target="_blank" class="h_games">虚拟光驱下载</a><a href="http://www.52pk.com/soft/201803/95743.shtml" target="_blank">网易加速器</a><a href="http://www.52pk.com/soft/201803/95660.shtml" target="_blank">网易云音乐</a><a href="http://www.52pk.com/soft/201803/95473.shtml" target="_blank">驱动精灵万能网卡版</a><a href="http://www.52pk.com/soft/201803/95766.shtml" target="_blank">猎豹浏览器</a><a href="http://www.52pk.com/soft/201803/95164.shtml" target="_blank">格式工厂</a><a href="http://www.52pk.com/soft/201803/95163.shtml" target="_blank" class="h_games">腾讯桌面工具</a><a href="http://www.52pk.com/soft/201803/95147.shtml" target="_blank">爱思苹果助手</a><a href="http://www.52pk.com/soft/201803/95195.shtml" target="_blank" class="h_games">全民k歌</a><a href="http://www.52pk.com/soft/201803/95773.shtml" target="_blank">搜狗浏览器</a><a href="http://www.52pk.com/soft/201803/95170.shtml" target="_blank">影音先锋播放器</a><a href="http://www.52pk.com/soft/201803/95265.shtml" target="_blank">斗鱼直播平台</a><a href="http://www.52pk.com/soft/201803/95134.shtml" target="_blank">安卓模拟器</a><a href="http://www.52pk.com/soft/201803/95665.shtml" target="_blank">360快剪辑</a><a href="http://www.52pk.com/soft/201803/95191.shtml" target="_blank">高清视频录制软件</a><a href="http://www.52pk.com/soft/201803/95172.shtml" target="_blank">psd文件修复软件</a><a href="http://www.52pk.com/soft/201705/71705.shtml" target="_blank">天意装机软件工具箱</a><a href="http://www.52pk.com/soft/201803/95797.shtml" target="_blank">暴风影音v5.74官方版</a><a href="http://www.52pk.com/soft/201803/95788.shtml" target="_blank">微信电脑版</a><a href="http://www.52pk.com/soft/201803/95785.shtml" target="_blank">foxmail邮箱</a><a href="http://www.52pk.com/soft/201803/95138.shtml" target="_blank">小皮助手模拟器</a><a href="http://www.52pk.com/soft/201803/95137.shtml" target="_blank">金山卫士2018版</a><a href="http://www.52pk.com/soft/201803/95133.shtml" target="_blank">光影魔术手2018版</a><a href="http://www.52pk.com/soft/201803/95176.shtml" target="_blank">熊猫加速器</a><a href="http://www.52pk.com/soft/201803/95150.shtml" target="_blank">火萤视频桌面</a><a href="http://www.52pk.com/soft/201803/95208.shtml" target="_blank">光盘数据恢复工具</a><a href="http://www.52pk.com/soft/201803/95204.shtml" target="_blank">虚拟光驱绿色版DAEMON</a><a href="http://down.52pk.com/xiazai/821.shtml" target="_blank">360安全卫士下载</a>
+            </li>
+        </ul>
+    </div>
+<div id="main">
+<div id="movie">
+   <h2 class="columnTitle t t3"><a href="#" class="more">MORE +</a><strong>热门游戏</strong><span>THE HOT GAME</span></h2>
+  <dl>
+    <a href="TNMGameCont.html"><dt class="m_1"><img src="../images/pubgico.jpg" alt=""></dt></a>
+    <dd class="c_2"><a class="c3" href="TNMGameCont.html">PUBG</a></dd>
+  </dl>
+  <dl>
+    <a href="TNMGameCont.html"><dt class="m_1"><img src="../images/csico.png" alt=""></dt></a>
+    <dd class="c_2"><a class="c3" href="TNMGameCont.html">cs</a></dd>
+  </dl>
+  <dl>
+    <a href="TNMGameCont.html"><dt class="m_1"><img src="../images/ico1.png" alt=""></dt></a>
+    <dd class="c_2"><a class="c3" href="TNMGameCont.html">THIEFN</a></dd>
+  </dl>
+  <dl>
+    <a href="TNMGameCont.html"><dt class="m_1"><img src="../images/ico2.png" alt=""></dt></a>
+    <dd class="c_2"><a class="c3" href="TNMGameCont.html">SMARY</a></dd>
+  </dl>
+  <div class="clear"></div>
+  <dl>
+    <a href="TNMGameCont.html"><dt class="m_1"><img src="../images/ico3.png" alt=""></dt></a>
+    <dd class="c_2"><a class="c3" href="TNMGameCont.html">BACKBABY</a></dd>
+  </dl>
+  <dl>
+    <a href="TNMGameCont.html"><dt class="m_1"><img src="../images/ico4.png" alt=""></dt></a>
+    <dd class="c_2"><a class="c3" href="TNMGameCont.html">BATTLE</a></dd>
+  </dl>
+  <dl>
+    <a href="TNMGameCont.html"><dt class="m_1"><img src="../images/ico5.png" alt=""></dt></a>
+    <dd class="c_2"><a class="c3" href="TNMGameCont.html">HTREA</a></dd>
+  </dl>
+  <dl>
+    <a href="TNMGameCont.html"><dt class="m_1"><img src="../images/ico6.png" alt=""></dt></a>
+    <dd class="c_2"><a class="c3" href="TNMGameCont.html">PERE</a></dd>
+  </dl>
+  <div class="clear"></div>
+  <dl>
+    <a href="TNMGameCont.html"><dt class="m_1"><img src="../images/ico7.png" alt=""></dt></a>
+    <dd class="c_2"><a class="c3" href="TNMGameCont.html">PSYCHO</a></dd>
+  </dl>
+  <dl>
+    <a href="TNMGameCont.html"><dt class="m_1"><img src="../images/ico8.png" alt=""></dt></a>
+    <dd class="c_2"><a class="c3" href="TNMGameCont.html">PURE:R</a></dd>
+  </dl>
+  <dl>
+    <a href="TNMGameCont.html"><dt class="m_1"><img src="../images/ico9.png" alt=""></dt></a>
+    <dd class="c_2"><a class="c3" href="TNMGameCont.html">SACRED2</a></dd>
+  </dl>
+  <dl>
+    <a href="TNMGameCont.html"><dt class="m_1"><img src="../images/ico10.png" alt=""></dt></a>
+    <dd class="c_2"><a class="c3" href="TNMGameCont.html">PERSA</a></dd>
+  </dl>
+  <div class="clear"></div>
+  <dl>
+    <a href="TNMGameCont.html"><dt class="m_1"><img src="../images/ico11.png" alt=""></dt></a>
+    <dd class="c_2"><a class="c3" href="TNMGameCont.html">DATE</a></dd>
+  </dl>
+  <dl>
+    <a href="TNMGameCont.html"><dt class="m_1"><img src="../images/ico12.png" alt=""></dt></a>
+    <dd class="c_2"><a class="c3" href="TNMGameCont.html">RTAD</a></dd>
+  </dl>
+  <dl>
+    <a href="TNMGameCont.html"><dt class="m_1"><img src="../images/ico13.png" alt=""></dt></a>
+    <dd class="c_2"><a class="c3" href="TNMGameCont.html">HAWX</a></dd>
+  </dl>
+  <dl>
+    <a href="TNMGameCont.html"><dt class="m_1"><img src="../images/ico14.png" alt=""></dt></a>
+    <dd class="c_2"><a class="c3" href="TNMGameCont.html">PENUMBRA</a></dd>
+  </dl>
+  
+</div>
+<div id="move">
+</div>
+<div id="nav">
+  <div class="hot_game">
+    <h2 class="columnTitle t t3"><a href="#" class="more">MORE +</a><strong>精彩视频</strong><span>MOVIE</span></h2>
+    <dl>
+      <a href=""><dt><video src="" poster="../images/lpic1.jpg"></video></dt></a>
+      <dd><span class="left"></span><a href="">PUBG</a><span class="right"><img src="" alt="">1200+</span></dd>
+    </dl>
+    <dl>
+      <a href=""><dt><video src="" poster="../images/lpic2.jpg"></video></dt></a>
+      <dd><span class="left"></span><a href="">MAP</a><span class="right"><img src="" alt="">800+</span></dd>
+    </dl>
+    <dl>
+      <a href=""><dt><video src="" poster="../images/v1.jpg"></video></dt></a>
+      <dd><span class="left"></span><a href="">BATTLE</a><span class="right"><img src="" alt="">1000+</span></dd>
+    </dl>
+    <dl>
+      <a href=""><dt><video src="" poster="../images/v2.jpg"></video></dt></a>
+      <dd><span class="left"></span><a href="">CLOSE</a><span class="right"><img src="" alt="">30+</span></dd>
+    </dl>
+    <div class="clear"></div>
+  </div>
+  <div class="clear"></div>
+  <h2 class="columnTitle t t3"><a href="#" class="more">MORE +</a><strong>最新资讯</strong><span>NEWS</span></h2>
+  <div class="news">
+  <div class="char">
+   <ul>
+      <li class="title"><a href="">绝地求生新赛季</a></li>
+      <li class="list_"><i></i><a href="">&nbsp;&nbsp;ump45</a></li>
+      <li class="list_"><i></i><a href="">&nbsp;&nbsp;m16改动</a></li>
+      <li class="list_"><i></i><a href="">&nbsp;&nbsp;新赛季通行证</a></li>
+      <li class="title"><a href="">战队周报</a></li>
+      <li class="list_"><i></i><a href="">&nbsp;&nbsp;17战队</a></li>
+      <li class="list_"><i></i><a href="">&nbsp;&nbsp;4AM战队</a></li>
+      <li class="list_"><i></i><a href="">&nbsp;&nbsp;TC战队</a></li>
+   </ul>
+   <div class="charpic">
+      <span>
+          <a href=""><img src="../images/c1.jpg" alt="" width="200px"></a>
+          <a href=""><img src="../images/c2.jpg" alt="" width="200px"></a>
+          <a href=""><img src="../images/c3.jpg" alt="" width="200px"></a> 
+          <a href=""><img src="../images/c4.jpg" alt="" width="200px"></a>   
+      </span>
+   </div>
+   </div>
+   <div class="new_pic">
+     <ul class="banner_pic" id="banner_pic">         <!-- liststyle -->
+        <li class="current"><img src="" alt="" class="one"></li>
+        <li class="pic"><img src="" alt="" class="one"></li>
+      <li class="pic"><img src="" alt="" class="one"></li>
+        <li class="pic"><img src="" alt="" class="one"></li>
+        <li class="pic"><img src="" alt="" class="one"></li>
+      </ul>
+      <ol id="button">
+        <li class="current"></li>
+        <li class="but"></li>
+        <li class="but"></li>
+        <li class="but"></li>
+        <li class="but"></li>
+      </ol>
+    </div>       
+  </div> 
+</div>
+<div class="clear"></div>
+<div class="More"> 
+<div class="moreTj lt">
+            <h2 class="columnTitle t t7">
+                <a href="http://pubg.52pk.com/xinwen/" target="_blank" class="more">MORE +</a>
+                <strong>更多推荐</strong>
+                <span>RECOMMEND</span>
+                <ul class="tjnewsbtn">
+                    <li class="cur" onclick="changeT(0)">新闻公告</li>/
+                    <li class="" onclick="changeT(1)">攻略经验</li>/
+                    <li class="" onclick="changeT(2)">玩家心情</li>
+                </ul>
+            </h2>
+            <ul class="tjnewsContent cc" style="display: block;">
+               <li class=""><a href="" target="_blank">打胎狂魔依然可嚣张 载具修复道具无法修复车辆轮胎</a></li>
+<li class="mr0"><a href="" target="_blank">绝地求生中的习惯毒瘤 各位中枪了吗？</a></li>
+<li class=""><a href="" target="_blank">PUBG第29轮更新公告 针对游戏性进行调整</a></li>
+<li class="mr0"><a href="" target="_blank">PUBG电竞青训计划公布 三大赛事获得授权</a></li>
+<li class="" style="border-bottom: 1px dashed rgb(210, 210, 210);"><a href="http://pubg.52pk.com/xinwen/7312204.shtml" target="_blank">5月15日正式服维护公告：本次维护不停机</a></li>
+<li class="mr0" style="border-bottom: 1px dashed rgb(210, 210, 210);"><a href="http://pubg.52pk.com/xinwen/7312200.shtml" target="_blank">新地图正在制作当中 可能含有中国风元素</a></li>
+
+            </ul>
+            <ul class="tjnewsContent cc" style="display: none;">
+                <li class=""><a href="" target="_blank">绝地求生将推僵尸角色 或要付费才能获得</a></li>
+<li class="mr0"><a href="" target="_blank">绝地求生又出新饰品了 PGI专属套装疑似泄露</a></li>
+<li class=""><a href="" target="_blank">PGI预选赛队伍跳点分布 机场竟成冷门点</a></li>
+<li class="mr0"><a href="" target="_blank">光速抢空投剧本介绍 让你开局就有神装</a></li>
+<li class=""><a href="" target="_blank">趣味神器VSS 无声投石机让你花式吃鸡</a></li>
+<li class="mr0"><a href="" target="_blank">绝地求生有趣实验：P92打828m的敌人竟然要1489下？</a></li>
+
+            </ul>
+            <ul class="tjnewsContent cc" style="display: none;">
+              <li class=""><a href="" target="_blank">吃鸡端游没有ping值 引起国外玩家疯狂吐槽</a></li>
+<li class="mr0"><a href="" target="_blank">改名卡使用率偏低 玩家：不能改中文名就没用</a></li>
+<li class=""><a href="" target="_blank">50万玩家集体退游，主要原因竟不是外挂！</a></li>
+<li class="mr0"><a href="" target="_blank">盘点绝地求生的几种奇葩玩家，你是哪一种？</a></li>
+<li class=""><a href="" target="_blank">DLG教练母亲垂帘听政 网友：顶级弹幕教练</a></li>
+<li class="mr0"><a href="" target="_blank">最没用的四大武器盘点 喷子都比它们几个好使</a></li>
+
+            </ul>
+        </div>
+</div>
+<div class="clear"></div> 
+<div class="imgbox" id="imgbox">
+         <span>
+             <a href="#"><img src="../images/float.jpg" /></a>
+             <a href="#"><img src="../images/float.jpg" /></a>
+             <a href="#"><img src="../images/float.jpg" /></a>
+             <a href="#"><img src="../images/float.jpg" /></a>
+             <a href="#"><img src="../images/float.jpg" /></a>
+             <a href="#"><img src="../images/float.jpg" /></a>
+             <a href="#"><img src="../images/float.jpg" /></a>
+             <a href="#"><img src="../images/float.jpg" /></a>
+             <a href="#"><img src="../images/float.jpg" /></a>
+             <a href="#"><img src="../images/float.jpg" /></a>
+         </span>
+     </div>
+</div>
+<div class="clear"></div>
+<div id="footer">
+     Copyright   2015-2020  TNM Game 游戏公司 版权所有
+     <br/>中国青岛 高新区广博路325号 青软教育集团 咨询热线：400-658-0166  400-658-1022<br/>
+</div>
+<div class="tree"><img src="../images/erweima.png" id="pic_tree"/></div>
+</body>

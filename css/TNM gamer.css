@@ -1,0 +1,693 @@
+*{margin: 0;padding: 0;font-size: 14px;font-family: "微软雅黑";list-style: none;}
+a:link,a:visited{color:#356282; text-decoration:none;}
+a:hover,a:active{color:#154263; text-decoration:none;}
+.clear{clear: both;}
+
+.columnTitle strong {
+	font-size: 25px;
+	font-weight: normal;
+	position: relative;
+	padding-left: 16px;
+	background: #fff;
+}
+.t::after {
+	width: 100%;
+	height: 1px;
+	background: #ddd;
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 15px;
+	z-index: -1;
+}
+.t2 strong::before, .t3 strong::before, .t8 strong::before {
+	background: #5272d9;
+}
+.columnTitle strong::before {
+	width: 4px;
+	height: 20px;
+	background: #f9646c;
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.t {
+	border-bottom: none;
+	position: relative;
+}
+.columnTitle {
+	font-size: 22px;
+	height: 24px;
+	padding-bottom: 16px;
+	font-weight: normal;
+}
+.t span {
+	padding-right: 20px;
+}
+.columnTitle span {
+	font-size: 14px;
+	color: #c7c7c7;
+	font-family: "Arial";
+	padding-left: 8px;
+	background: #fff;
+}
+.more {
+	float: right;
+	width: 66px;
+	height: 20px;
+	background: #51b5a6;
+	font-size: 12px;
+	font-family: "Arial";
+	text-align: center;
+	line-height: 20px;
+	margin-top: 5px;
+}
+h3{
+	color: #ffffff;
+	font-weight: bold;
+}
+#header{
+	overflow: hidden;
+	width: 100%;
+	background: #000001;
+	border: 2px solid #48665f;
+	height: 70px;
+}
+.w_1{
+	display: inline-block;
+	line-height: 70px;
+	height: 70px;
+}
+.left{float: left;}
+.right{	float: right;}
+.ShareBox {
+	margin-top: 14px;
+	position: relative;
+}
+.ShareBox a {
+	display: inline-block;
+	width: 46px;
+	height: 46px;
+	float: left;
+	margin-left: 13px;
+	background: url(../images/icon52pkindex.png) 0 -56px no-repeat;
+	position: relative;
+}
+
+.ShareBox a.weixin {
+	background-position: -58px -56px;
+	position: relative;
+}
+.ShareBox a.wap52PK {
+	background-position: -115px -56px;
+}
+.ShareBox a.kehd52PK {
+	background-position: -172px -56px;
+}
+.ShareBox a.collect {
+	background-position: -229px -56px;
+}
+.ShareBox a.dlbefore {
+	background-position: -288px -56px;
+}
+
+.ShareBox a.sina:hover {
+	background-position: 0 -102px;
+	position: relative;
+}
+.ShareBox a.weixin:hover {
+	background-position: -58px -102px;
+	position: relative;
+}
+.ShareBox a.wap52PK:hover {
+	background-position: -115px -102px;
+}
+.ShareBox a.kehd52PK:hover {
+	background-position: -172px -102px;
+}
+.ShareBox a.collect:hover {
+	background-position: -229px -102px;
+}
+.ShareBox a.dlbefore:hover {
+	background-position: -288px -102px;
+}
+.TopSearchBox{
+	position: relative;
+    width: 390px;
+    height: 40px;
+    background: #d4d4d7;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;  /*??????*/
+    margin: 18px 0 0 100px;
+}
+.tab {
+    width: 66px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+    position: absolute;
+    left: 550px;
+    top: -55px;
+    cursor: pointer;
+    padding-bottom: 10px;
+    z-index: 100;
+}
+.tab span i{
+    width: 0px;
+    height: 0px;
+    border: 7px solid #000;
+    border-color: transparent transparent #000 transparent;
+    display: inline-block;
+    position: absolute;
+    right: -5px;
+   
+}
+
+.keyword {
+    width: 245px;
+    height: 40px;
+    border: none;
+    background: none;
+    padding-left: 80px;
+    line-height: 40px;
+    color: #333;
+    font-size: 14px;
+    font-family: "方正黑体简体";
+}
+.keySubmit {
+    width: 60px;
+    height: 40px;
+    background: url(../images/search.png) no-repeat;  /*图片*/
+    border: none;
+    cursor: pointer;
+}
+
+.banner{
+	width:100%; 
+	height:580px;
+	background: url(../images/bg2.png);
+	position:relative; 
+}
+.one{
+	position:absolute; 
+	left:50%; 
+	top:0; 
+	margin-left:-500px;
+}
+.banner img{border-radius:20px;}
+.banner .banner_pic .pic{display:none;}
+.banner .banner_pic .current{display:block;}
+.banner ol{
+	position:absolute; 
+	left:50%; 
+	top:90%;
+	margin-left:-62px;
+}
+.banner ol .but{
+	background: #ffffff;
+	float:left; 
+	width:20px; 
+	height:5px; 
+	border-radius: 3px;
+	margin-right:20px;
+}
+.banner ol li{cursor:pointer;}
+.banner ol .current{
+	background:#90d1d5; 
+	float:left; 
+	width:20px; 
+	height:5px; 
+	border-radius: 3px;
+	margin-right:20px;
+}
+#down{
+	width: 100%;
+	height: 20px;
+	margin: 0 auto;
+	background: url(../images/star.jpg) 50% 50% repeat-x;
+	background-color: #cccdd7;
+}
+#down_1{
+	display: none;
+	margin: 0 auto;
+	font-size: 12px;
+	text-align: center;
+	cursor: pointer;
+	width: 100%;
+	height: 20px;
+	line-height: 20px;
+	background-color: #59888d;
+	position: relative;
+}
+#down_1 p{
+	color: #000;
+	position: relative;
+}
+#down_1:hover{
+	box-shadow: 0 3px 3px 0 #ccccd8;
+	transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	-o-transform: scale(1.1);
+	transition: all 0.3s ease-out;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+}
+#down_{
+	cursor: pointer;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	margin-top: -26px;
+	width: 40px;
+	height: 20px;
+}
+b{
+	 transform: rotate(180deg);
+	 width: 0;
+	 height: 0;
+	 border:7px solid #000;
+	 border-color: #000 transparent transparent transparent;
+	 position: relative;
+	 left: 12px;
+	 top: 35px;
+}
+#game_manu{
+	display: none;
+
+}
+
+#main{ 
+	width: 1200px;
+	margin: 0 auto;
+}
+
+#movie{
+	padding-top: 20px;
+	border-right: 1px solid #e0e0e0;
+	float: left;
+	width:544px; 
+}
+#movie dl{
+	width:100px; 
+	height:130px; 
+	float: left;
+	border-radius: 10px;
+	margin-right:20px;
+	margin-top: 40px;
+}
+}
+.c_2{
+	border-top: 1px solid #000000;
+	display: block;
+	width:100px; 
+	height:45px; 
+	background:#ffffff；
+	line-height:45px;  
+}
+.c_2 a:link,.c_2 a:visited{	
+	text-align: center;
+	font-size: 13px; 
+	color:#5d0b0b;
+	display: block;
+	height: 25px;
+	line-height: 25px;
+	text-align: center;
+}
+.c_2 a:hover,.c_2 a:active{
+	text-align: center;
+	font-size: 13px; 
+	color:#123456;
+	height: 25px;
+	display: block;
+	line-height: 25px;
+	text-align: center;
+}
+#movie img{
+	width:100px; 
+	height:100px; 
+	border:1px solid #dcd2ba;
+	border-radius:50px;
+	cursor: pointer;
+}
+#movie img:hover,#movie dl:hover img{
+	transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	-o-transform: scale(1.1);
+	transition: all 0.3s ease-out;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+
+}
+.m_2{
+	width:100px; 
+	height:85px; 
+	border:1px solid #dcd2ba;
+	border-radius: 50px;
+	cursor: pointer;
+	box-shadow: 4px 2px 4px 2px #000000;
+}
+
+#nav{
+	width: 600px;
+	border-left : 1px solid #e0e0e0;
+	float: right;
+}
+.hot_game{
+	width: 100%;
+	height: 170px;
+	margin-bottom: 40px;
+	padding-top: 20px;
+}
+.hot_game dl{
+	margin-left: 40px;
+	margin-top: 20px;
+	float:left;
+}
+.hot_game video{
+	width:80px; 
+	height:60px; 
+	border-radius:10px;
+	cursor: pointer;
+}
+.hot_game video:hover{
+	transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	-o-transform: scale(1.1);
+	transition: all 0.3s ease-out;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+}
+.hot_game a{font-size: 12px;}
+.hot_game .right{
+	display: block;
+	height: 25px;
+	line-height: 25px;
+	font-size:8px; }
+.hot_game img{margin-right: 10px;overflow: hidden;}
+.news{
+	width: 100%;
+	height: 500px;
+}
+
+.char{
+	width: 480px;
+	margin-left: 5px;
+	float: left;
+	margin-top: 10px;
+
+}
+.char ul{
+	margin-left: 20px;
+	opacity: 0.9;
+}
+.news_pic{
+	margin-top: 100px;
+}
+
+.title{
+	box-shadow: 0 2px 2px 0 #d6d3d4;
+	display: block;
+	height: 35px;
+	line-height: 35px;
+	background: #d6d3d4;
+}
+.title a{
+	display: block;
+	margin-left: 10px;
+	color: #000000;
+	font-style:italic;
+	font-size: 18px;
+	text-align: left;
+}
+.title a:hover,.list a:hover{
+	color: #fff;
+}
+.list_ a{
+	display: inline-block;
+	text-indent: -10px;
+	margin-left: 10px;
+	color: #000;
+	font-size: 18px;
+}
+.list_ a:hover{
+	color: #d83c3c;
+}
+.list_{
+	height: 45px;
+	line-height: 45px;
+	margin-left: 10px;
+}
+.list_ i{
+	display: inline-block;
+	width: 0;
+	height: 0;
+	border: 7px solid #000;
+	position: relative;
+	border-color: transparent transparent transparent #000;
+}
+.imgbox{
+	width: 1020px;
+	height: 100px;
+	margin-top: 45px;
+	white-space:nowrap;
+	overflow:hidden;
+}
+#footer{
+	margin-top: 5px;
+	width: 100%;
+	height: 60px;
+	text-align: center;
+	background: #000000;
+	background:url(../images/footer_bg.jpg) repeat-x; 
+	font-size: 14px;
+	color: #ffffff;
+	padding-top: 20px;
+	border-radius: 10px;
+}
+.tree{
+	position:fixed; 
+	right:0;
+	bottom:10%;
+}
+
+
+
+
+.banner .list{position:relative;}
+.banner #list_cur{
+	width:66px; 
+	display:none; 
+	position:absolute; 
+	left:10px; 
+	top:50px; 
+	background-color:#fff; 
+	border:1px solid #EEE;
+	border-radius: 5px;
+	z-index: 100;
+}
+#list_cur b{
+	width: 0;
+	height: 0;
+	display: inline-block;
+	position: relative;
+	left:-5px;
+	top:0px;
+	border: 5px solid #000;
+	border-color: transparent #000 transparent transparent;
+}
+.banner #list_cur a:link,.banner #list_cur a:visited{
+	display: block;
+	border:0;
+
+}
+.right span{display: inline-block;margin-left:15px;}
+
+.searchMorePlay {
+	height: 40px;
+	line-height: 40px;
+	position: absolute;
+	right: 20px;
+	top: 0;
+	padding-left: 25px;
+	padding-right: 12px;
+}
+
+.searchMorePlay a:link, .searchMorePlay a:visited {
+	color: #ff7a7a;
+}
+
+.searchMorePlay a::before {
+	width: 18px;
+	height: 18px;
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 11px;
+	background: url(../images/icon52pkindex.png) -188px 0 no-repeat;
+}
+
+.searchMorePlay a::after {
+	width: 7px;
+	height: 11px;
+	content: "";
+	position: absolute;
+	right: 0;
+	top: 15px;
+	background: url(../images/icon52pkindex.png) -242px 0 no-repeat;
+}
+#game_manu ul.column-sort {
+	padding: 9px 19px;
+}
+
+#game_manu li cite {
+	display: inline-block;
+	float: left;
+	width: 60px;
+	height: 25px;
+	background: url(../images/icon52pkindex.png) 0 -197px no-repeat;
+	font-size: 14px;
+	color: #fff;
+	line-height: 25px;
+	text-indent: 26px;
+	font-style: normal;
+	margin-right: 5px;
+	margin-top: 5px;
+}
+
+#game_manu dl {
+	height: 40px;
+	width: 100%;
+	background: url(../images/gamesbg.jpg) repeat-x;
+}
+
+#game_manu dd {
+	float: left;
+	width: 88px;
+	height: 38px;
+	line-height: 38px;
+	font-size: 14px;
+	color: #888;
+	text-align: center;
+	border-right: 1px solid #e0e0e0;
+	padding-top: 2px;
+	cursor: pointer;
+}
+
+#game_manu dd.nowshow {
+	border-top: 2px solid #ff9600;
+	padding-top: 0;
+	background: #fff;
+	color: #000;
+}
+
+#game_manu {
+	width: 1200px;
+	border: 1px solid #e0e0e0;
+	border-top: none;
+	margin: 0 auto;
+	position: relative;
+}
+
+#game_manu li {
+	padding: 0 0;
+	overflow: hidden;
+	color: #eee;
+}
+
+#game_manu li a {
+	padding: 0 8px 0 16px;
+	position: relative;
+	display: inline-block;
+	line-height: 34px;
+}
+#game_manu li a::before {
+	position: absolute;
+	right: -6px;
+	top: 10px;
+	width: 1px;
+	height: 14px;
+	background: #eee;
+	content: "";
+}
+#move{
+	margin-top: 50px;
+	width: 100px;
+	height: 750px;
+	position: absolute;
+	left: 46%;
+}
+.arow{
+	width: 20px;
+	height: 224px;
+	position: absolute;
+	background: #b6b2b4;
+	z-index: -1;
+}
+.char img{
+	margin-left: 20px;
+	cursor: pointer;
+}
+.char img:hover{
+	transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	-o-transform: scale(1.1);
+	transition: all 0.3s ease-out;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+}
+.More{
+	margin-top: 20px;
+}
+.tjnewsbtn {
+	display: inline-block;
+	background: #fff;
+	font-size: 14px;
+	color: #d2d2d2;
+	padding-left: 18px;
+	position: relative;
+	left: -8px;
+}
+.tjnewsbtn li {
+	display: inline-block;
+	font-size: 16px;
+	padding: 0 10px;
+	cursor: pointer;
+	color: #555;
+}
+.tjnewsbtn li.cur {
+	font-weight: bold;
+	color: #5272d9;
+}
+.tjnewsContent {
+	margin-top: 12px;
+	display: none;
+}
+.tjnewsContent li {
+	height: 96px;
+	line-height: 96px;
+	border-top: 1px dashed #d2d2d2;
+	float: left;
+	margin-right: 30px;
+	width: 356px;
+	font-size: 16px;
+	position: relative;
+	padding-left: 14px;
+	overflow: hidden;
+}
+.charpic{
+	overflow: hidden;
+	padding-top: 20px;
+}
+.charpic a{
+	margin-left: 12px;
+}

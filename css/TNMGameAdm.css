@@ -1,0 +1,254 @@
+*{margin: 0;padding: 0;font-size: 14px;font-family: "微软雅黑";list-style: none;}
+a:link,a:visited{color:#000000; text-decoration:none;}
+a:hover,a:active{color:#d67152; text-decoration:none;}
+body{
+	background: #ffffff;
+	background: url(../images/bg.fw.png) no-repeat;
+}
+h3{
+	margin:10px 0 0 10px;
+}
+p{
+	display: inline-block;
+}
+.clear{clear: both;}
+.left{float: left;}
+.right{float: right;}
+#header{
+	width: 100%;
+	height: 60px;
+	margin: 0 auto;
+	border-bottom: 2px solid #902424;
+	background: url(../images/bg52px.jpg);
+}
+#header .right{
+	display: inline-block;
+	height:60px;
+	line-height: 60px;
+	float: right;
+	margin-right: 20px;
+}
+#main{
+	width: 980px;
+	margin: 40px auto 0 auto;
+}
+#main .content{
+	margin-top: 10px;
+	border-spacing: 25px;
+
+}
+#main .content .left {
+	width: 80px;
+}
+#main .content .right{
+	width: 220px;
+}
+#one,#two,#text1,#text2,#text3,#password1,#password2{
+	height: 30px;
+	border-radius: 15px;
+	text-indent: 15px;
+	border: 1px solid #9cada0;
+}
+#main .content #text1,#main .content #text2,#main .content #text3,#main .content #password1,#main .content #password2{
+	width: 200px;
+}
+.columnTitle strong {
+	font-weight: normal;
+	position: relative;
+	padding-left: 16px;
+	background: #fff;
+}
+.t::after {
+	width: 100%;
+	height: 1px;
+	background: #ddd;
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 15px;
+	z-index: -1;
+}
+.t2 strong::before, .t3 strong::before, .t8 strong::before {
+	background: #5272d9;
+}
+.columnTitle strong::before {
+	width: 4px;
+	height: 20px;
+	background: #f9646c;
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.t {
+	border-bottom: none;
+	position: relative;
+}
+.columnTitle {
+	font-size: 22px;
+	height: 24px;
+	padding-bottom: 16px;
+	font-weight: normal;
+}
+.t span {
+	padding-right: 20px;
+}
+.columnTitle span {
+	font-size: 14px;
+	color: #c7c7c7;
+	font-family: "Arial";
+	padding-left: 8px;
+	background: #fff;
+}
+.more {
+	float: right;
+	width: 66px;
+	height: 20px;
+	background: #51b5a6;
+	font-size: 12px;
+	font-family: "Arial";
+	text-align: center;
+	line-height: 20px;
+	margin-top: 5px;
+}
+strong{
+	font-weight: bold;
+	font-size: 20px;
+}
+#checbox{
+	display: inline-block;
+	margin-right: 3px;
+}
+#textarea{
+	border-color: #9cada0;
+	padding: 10px;
+	border-radius: 10px;
+}
+.btn{
+	cursor: pointer;
+	background: #696d9f;
+	border-radius: 10px;
+	font-size: 15px;
+	color: #ffffff;
+	width: 100px;
+	height: 35px;
+	display: block;
+	margin: 0 auto;
+}
+.step{
+	display: block;
+	margin-top: -20px;
+}
+.step .left1{
+	border-left: 3px solid #000;
+	float: left;
+	display: block;
+	width: 300px;
+	height: 50px;
+	line-height: 50px;
+	background: #696d9f;
+	text-align: center;
+	font-size: 18px;
+}
+.step .left2,.step .left3{
+	float: left;
+	display: block;
+	width: 300px;
+	height: 50px;
+	line-height: 50px;
+	background: #535676;
+	text-align: center;
+	font-size: 18px;
+}
+.c{
+	display: block;
+	margin-top: 10px;
+}
+.step1{
+	display: block;
+}
+.step2{
+	height: 450px;
+	display: none;
+}
+.step2 .text4{
+	display: inline-block;
+	float: left;
+	width: 150px;
+	height: 40px;
+	border: 2px solid #ae6a6c;
+	border-radius: 3px;
+}
+#step2{
+	width: 250px;
+	display: block;
+	margin: 0 auto;
+	margin-top: 100px;
+}
+.step2 #text4{
+	color: #000000;
+	display: block;
+	margin: 2.5px auto 0 auto;
+	border: none;
+	width: 100px;
+	height: 35px;
+	font-size: 20px;
+}
+.step2 button{
+	background: #ae6a6c;
+	display: inline-block;
+	margin: 2px 0 0 10px;
+	float: left;
+	width: 50px;
+	height: 35px;
+	border-radius: 10px;
+}
+.step3{
+	width: 100px;
+	height: 500px;
+	margin: 0 auto;
+	display: none;
+
+}
+.step3 h4{
+	font-size: 30px;
+	margin-top: 300px;
+	font-weight: bold;
+}
+
+#footer{
+	margin-top: 70px;
+	width: 100%;
+	height: 100px;
+	text-align: center;
+	background: #000000;
+	background:url(../images/bg52px.jpg) 0 -90px repeat-x; 
+	font-size: 14px;
+	color: #000000;
+	padding-top: 20px;
+	border-radius: 10px;
+}
+.true{
+	color: green;
+}
+.false{
+	color: red;
+}
+.content tr>td{
+	width: 80px;
+}
+.shang{
+	display: inline-block;
+	margin: 5px 0 0 20px;
+	cursor: pointer;
+	font-weight: bold;
+	border-bottom: 1px dashed #123456;
+}
+i{
+	display: inline-block;
+	width: 0;
+	height: 0;
+	border: 5px solid #9cada0;
+	position: relative;
+	border-color: transparent transparent transparent #9cada0;
+}
